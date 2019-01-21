@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 
-@Controller
+@RestController
 public class ExcerciseController {
     // Create a POST route that allows creating a new Exercise
     @Autowired
