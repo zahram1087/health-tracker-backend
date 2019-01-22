@@ -11,3 +11,17 @@ Android: Display Exercises from the server
 
 Android: Post Exercises to the server
 * When a user creates a new Exercise locally on their device, in addition to saving it to the local database, the app should POST it to the server.
+
+### Lab 33: Security
+#### Overview
+This lab will ensure that your app has appropriate security implemented.
+
+#### Feature Tasks
+Use secrets appropriately
+Ensure you have no secret information in any place that could be seen by taking apart your apk.
+
+#### Auth on the backend
+Add auth to your Spring backend, so that users can log in. Require users to be logged in to post an Exercise, and associate users and exercises.
+
+#### SharedPrefs for login
+Allow the user to log in to your app, using the login functionality for the backend. Store their token in SharedPrefs, and ensure it’s secret.
