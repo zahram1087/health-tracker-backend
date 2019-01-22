@@ -1,9 +1,6 @@
 package com.zhmohamed.healthtrackerbackend;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Exercise {
@@ -16,6 +13,9 @@ public class Exercise {
     public String description;
     public String timestamp;
     public String location;
+
+    @ManyToOne
+    public AppUser appUser;
 
     public Exercise () {}
 
